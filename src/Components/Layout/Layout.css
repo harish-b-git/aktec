@@ -1,0 +1,45 @@
+
+.layout{
+    background-color: whitesmoke;
+    margin: 30px;
+}
+span{
+    background-color:rgb(191, 225, 238);
+    color: blue;
+   font-size: larger;
+    padding: 6px;
+    border-radius: 8px;
+    border:1px  rgb(80, 80, 160);
+   
+}
+a{
+    font-weight: 500;
+}
+
+h3{
+    text-align: left;
+    font-size: x-large;
+font-weight: 700;
+}
+p{
+    opacity: 0.8;
+   
+}
+.card{
+    border-radius: 25px;
+}
+.card:hover{
+    border:solid rgb(66, 50, 50);
+    background-color: whitesmoke;
+    transition: ease-in-out;
+}
+.popup{
+    width: 200px;
+    height: auto;
+    background-color: rgb(242, 184, 184);
+    font-weight: 700;
+    font-family: sans-serif;
+    color: rgb(193, 176, 176);
+    /* border: solid 2px; */
+    border-radius: 20%;
+}

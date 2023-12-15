@@ -1,0 +1,119 @@
+ .container {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  /* justify-content: center; */
+  height: auto;
+  margin: 45px 65px;
+  padding: 2px 35px;
+}
+
+span{
+    color:#1bbd64
+}
+
+.underline {
+  /* align-items: center; */
+  margin: 5px;
+  width: 50px;
+  height: 3px;
+  background-color: rgb(145, 202, 58);
+  border-radius: 3px;
+}
+.cards {
+  display: flex;
+  width: 100%;
+  /* flex-wrap: wrap;  */
+   /* justify-content: center;  */
+   /* flex-direction: column; */
+}
+.card:hover {
+    background-color: #1bbd64; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a box shadow */
+    transform: scale(1.06); /* Increase the size slightly on hover  */
+    transition: all 0.3s;   /*Add a smooth transition for a gradual effect  */
+  }
+  
+
+h3 {
+  text-align: center;
+  font-weight: 500;
+}
+.card{
+    width: 100%;
+    margin: 5px;
+}
+.card-header{
+    height: 90px;
+    background: white;
+}
+.card-header p {
+  color: rgb(150, 148, 148);
+  opacity: 0.4;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.card-img-top{
+    width: 100%;
+    height: auto;
+}
+.notes {
+  font-size: small;
+  color: rgb(148, 145, 145);
+  font-weight: 400;
+} 
+
+@media  screen and (max-width:600px) {
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+    .cards{
+        flex-direction: column;
+        
+        margin-left: 30px;
+        width: 110px;
+    }
+     .card-header p{
+        text-align: start;
+        font-size: 8px;
+     }
+     .card-img-top{
+        height: 100px;
+        width: 90px;
+     }
+     .card-header h5{
+        font-size: 12px;
+     }
+     .card-header{
+        text-align: start;
+        height: 60px;
+    } 
+    .notes{
+        font-size: 7px;
+        text-align: start;
+    } 
+}
+/* 
+@media  screen and (max-width:900px) {
+    .cards{
+        flex-direction: column;
+     .card-header p{
+        text-align: center;
+        font-size: 3px;
+     }
+     .card-header h5{
+        font-size: 5px;
+     }
+     .card-header{
+        margin: 0;
+        padding: 1px;
+        height: 25px;
+     }
+    }  
+} */

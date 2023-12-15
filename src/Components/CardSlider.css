@@ -1,0 +1,36 @@
+/* CardSlider.css */
+.card-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .card-container {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .card {
+    flex: 0 0 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card.active {
+    transform: scale(1.1);
+  }
+  
+  button {
+    font-size: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  

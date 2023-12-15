@@ -1,0 +1,56 @@
+
+.container{
+    width: 100%;
+    background-color: white;
+}
+.heading{
+    font-weight: 600;
+    color: rgb(12, 88, 32);
+}
+.accordion-item{
+    margin-bottom: 5px;
+    border: 0;
+   
+}
+p{
+    text-align: left;
+    font-size: small;
+}
+
+.accordion-button{
+    font-weight: 700;
+    background-color: rgb(230, 236, 236);
+    
+}
+.accordion-button:hover{
+    background-color: rgb(26, 176, 121);
+    color: white;
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url('./assets/minus-svgrepo-com.svg');
+}
+.accordion-button::after{
+    background-image: url('./assets/plus-small-svgrepo-com.svg');
+    
+    
+}
+.accordion-button:focus{
+    box-shadow: 0 0 0;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 10px; /* Adjust padding for smaller screens */
+
+    }
+    .heading{
+        width: 80%;
+        font-size: medium;
+        margin: 0;
+    }
+
+    .accordion-button {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
